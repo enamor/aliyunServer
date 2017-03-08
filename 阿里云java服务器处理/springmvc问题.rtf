@@ -1,0 +1,323 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;\f1\fswiss\fcharset0 Helvetica;\f2\fmodern\fcharset0 CourierNewPS-BoldMT;
+\f3\fmodern\fcharset0 CourierNewPS-ItalicMT;\f4\fmodern\fcharset0 Courier;\f5\fnil\fcharset134 PingFangSC-Regular;
+\f6\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red98\green98\blue98;\red0\green128\blue255;\red3\green168\blue216;
+\red167\green236\blue33;\red82\green202\blue17;\red23\green198\blue163;\red217\green232\blue247;\red38\green38\blue38;
+\red109\green109\blue109;\red242\green242\blue242;\red251\green0\blue7;\red14\green0\blue45;\red249\green249\blue249;
+\red106\green0\blue67;\red0\green0\blue255;\red10\green82\blue135;\red37\green127\blue159;\red15\green114\blue1;
+\red34\green0\blue47;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 <!-- <base \ul href\ulnone ="$\{pageContext.request.contextPath\}/"> -->
+\f1\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf3 <
+\f2\b \cf4 base
+\f0\b0 \cf0  \cf5 href\cf6 =
+\f3\i \cf7 "$\{pageContext.request.contextPath\}/"
+\f0\i0 \cf3 >\
+\pard\pardeftab720\partightenfactor0
+\cf3 \ul \ulc3 <\cf8 \ulc8 #assign base=rc.contextPath />\
+\pard\pardeftab720\partightenfactor0
+\cf2 \ulnone <!-- <property name="requestContextAttribute" value="rc"></property>   -->\cf8  \ul \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f4\fs28 \cf9 \cb10 \expnd0\expndtw0\kerning0
+\ulnone String\'a0path\'a0=\'a0request.getContextPath();  String\'a0basePath\'a0=\'a0request.getScheme()\'a0+ "://" +\'a0request.getServerName()\'a0+ ":" +\'a0request.getServerPort()\'a0+\'a0path\'a0+ "/";\'a0%><script type="text/javascript" src="<%=basepath%>/js/xx.js"></script>  \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf8 	\cf2 <!-- 
+\f5 \'b6\'a8\'d2\'e5\'cc\'f8\'d7\'aa\'b5\'c4\'ce\'c4\'bc\'fe\'b5\'c4\'c7\'b0\'ba\'f3\'d7\'ba
+\f0  
+\f5 \'a3\'ac\'ca\'d3\'cd\'bc\'c4\'a3\'ca\'bd\'c5\'e4\'d6\'c3
+\f0 -->\cf0 \
+\cf8 	\cf3 <
+\f2\b \cf4 bean
+\f0\b0 \cf0  \cf5 class\cf6 =
+\f3\i \cf7 "org.springframework.web.servlet.view.InternalResourceViewResolver"
+\f0\i0 \cf3 >\cf0 \
+\cf8 		\cf2 <!-- 
+\f5 \'d5\'e2\'c0\'ef\'b5\'c4\'c5\'e4\'d6\'c3\'ce\'d2\'b5\'c4\'c0\'ed\'bd\'e2\'ca\'c7\'d7\'d4\'b6\'af\'b8\'f8\'ba\'f3\'c3\'e6
+\f0 action
+\f5 \'b5\'c4\'b7\'bd\'b7\'a8
+\f0 return
+\f5 \'b5\'c4\'d7\'d6\'b7\'fb\'b4\'ae\'bc\'d3\'c9\'cf\'c7\'b0\'d7\'ba\'ba\'cd\'ba\'f3\'d7\'ba\'a3\'ac\'b1\'e4\'b3\'c9\'d2\'bb\'b8\'f6
+\f0  
+\f5 \'bf\'c9\'d3\'c3\'b5\'c4
+\f0 url
+\f5 \'b5\'d8\'d6\'b7
+\f0  -->\cf0 \
+\cf8 		\cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "prefix"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 "/WEB-INF/jsp/"
+\f0\i0 \cf0  \cf3 />\cf0 \
+\cf8 		\cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "suffix"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 ".jsp"
+\f0\i0 \cf0  \cf3 />\cf0 \
+\cf8 		\cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "order"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 "1"
+\f0\i0 \cf0  \cf3 />\cf8   \cf0 \
+\cf8 	\cf3 </
+\f2\b \cf4 bean
+\f0\b0 \cf3 >\cf0 \
+\cf8 	\cf2 <!-- html
+\f5 \'ca\'d3\'cd\'bc\'bd\'e2\'ce\'f6\'c6\'f7
+\f0  
+\f5 \'b1\'d8\'d0\'eb\'cf\'c8\'c5\'e4\'d6\'c3
+\f0 freemarkerConfig,
+\f5 \'d7\'a2\'d2\'e2
+\f0 html
+\f5 \'ca\'c7\'c3\'bb\'d3\'d0
+\f0 prefix
+\f5 \'c7\'b0\'d7\'ba\'ca\'f4\'d0\'d4\'b5\'c4
+\f0 -->\cf0 \
+\cf8    \cf3 <
+\f2\b \cf4 bean
+\f0\b0 \cf0  \cf5 id\cf6 =
+\f3\i \cf7 "freemarkerConfig"
+\f0\i0 \cf0  \cf5 class\cf6 =
+\f3\i \cf7 "org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer"
+\f0\i0 \cf3 >\cf8   \cf0 \
+\cf8         \cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "templateLoaderPath"
+\f0\i0 \cf3 >\cf8   \cf0 \
+\cf8             \cf3 <
+\f2\b \cf4 value
+\f0\b0 \cf3 >\cf8 /asset/html/\cf3 </
+\f2\b \cf4 value
+\f0\b0 \cf3 >\cf8   \cf0 \
+\cf8         \cf3 </
+\f2\b \cf4 property
+\f0\b0 \cf3 >\cf8   \cf0 \
+\cf8     \cf3 </
+\f2\b \cf4 bean
+\f0\b0 \cf3 >\cf8   \cf0 \
+\cf8      \cf3 <
+\f2\b \cf4 bean
+\f0\b0 \cf0  \cf5 id\cf6 =
+\f3\i \cf7 "htmlviewResolver"
+\f0\i0 \cf0   \
+        \cf5 class\cf6 =
+\f3\i \cf7 "org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver"
+\f0\i0 \cf3 >\cf8   \cf0 \
+\cf8         \cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "viewClass"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 "org.zn.common.MyFreeMarkerView"
+\f0\i0 \cf0  \cf3 />\cf0 \
+\cf8         \cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "suffix"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 ".ftl"
+\f0\i0 \cf0  \cf3 />\cf8  \cf0 \
+\cf8         \cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "order"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 "0"
+\f0\i0 \cf3 ></
+\f2\b \cf4 property
+\f0\b0 \cf3 >\cf8  \cf0 \
+\cf8         \cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "contentType"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 "text/html;charset=UTF-8"
+\f0\i0 \cf3 ></
+\f2\b \cf4 property
+\f0\b0 \cf3 >\cf8   \cf0 \
+\cf8         \cf2 <!-- <property name="exposeRequestAttributes" value="true" />\cf0 \
+\cf2 		<property name="exposeSessionAttributes" value="true" />\cf0 \
+\cf2 		<property name="exposeSpringMacroHelpers" value="true" />  -->\cf0 \
+\cf8         \cf3 <
+\f2\b \cf4 property
+\f0\b0 \cf0  \cf5 name\cf6 =
+\f3\i \cf7 "requestContextAttribute"
+\f0\i0 \cf0  \cf5 value\cf6 =
+\f3\i \cf7 "rc"
+\f0\i0 \cf3 ></
+\f2\b \cf4 property
+\f0\b0 \cf3 >\cf8   \cf0 \
+\cf8             \cf0 \
+\cf8     \cf3 </
+\f2\b \cf4 bean
+\f0\b0 \cf3 >\cf0 \
+\cf8     \
+
+\f1\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+
+\f5 \cf0 \
+{\field{\*\fldinst{HYPERLINK "https://zhidao.baidu.com/question/2202944493140082428.html"}}{\fldrslt https://zhidao.baidu.com/question/2202944493140082428.html}}\
+{\field{\*\fldinst{HYPERLINK "https://my.oschina.net/pagecorrect/blog/610037?fromerr=gr3hlyYJ"}}{\fldrslt https://my.oschina.net/pagecorrect/blog/610037?fromerr=gr3hlyYJ}}\
+\
+{\field{\*\fldinst{HYPERLINK "http://liuxlyard.iteye.com/blog/1156081"}}{\fldrslt http://liuxlyard.iteye.com/blog/1156081}}\
+{\field{\*\fldinst{HYPERLINK "http://bbs.jeecms.com/freemarker/4916.jhtml"}}{\fldrslt http://bbs.jeecms.com/freemarker/4916.jhtml}}\
+\
+\'d7\'ca\'d4\'b4\'c2\'b7\'be\'b6\'d3\'b0\'c9\'e4\'b5\'c4\'ce\'ca\'cc\'e2
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs28 \cf9 \cb11 \expnd0\expndtw0\kerning0
+1
+\f5 \'a1\'a2\'d4\'da
+\f1 web.xml
+\f5 \'d6\'d0\'c5\'e4\'d6\'c3
+\f1 spring
+\f5 \'d3\'b3\'c9\'e4\'b5\'c4
+\f1 url
+\f5 \'c0\'e0\'d0\'cd
+\f1 \
+
+\f5 \'ce\'d2\'b5\'c4\'ca\'be\'c0\'fd
+\f1 \
+(
+\f5 \'d3\'b3\'c9\'e4
+\f1 .do
+\f5 \'ba\'f3\'d7\'ba\'ba\'cd
+\f1 .png
+\f5 \'ba\'f3\'d7\'ba\'b5\'c4\'c1\'b4\'bd\'d3\'a3\'ac\cf12 \'c6\'e4\'d6\'d0\'d6\'bb\'d3\'d0
+\f1 .png
+\f5 \'ca\'c7\'be\'b2\'cc\'ac\'d7\'ca\'d4\'b4\'b9\'fe\'a3\'ac\'d2\'b2\'bf\'c9\'d2\'d4\'bc\'d3\'c8\'eb
+\f1 .css
+\f5 \'ca\'b2\'c3\'b4\'b5\'c4
+\f1 ,
+\f5 \'bb\'f2\'d5\'df\'d6\'b1\'bd\'d3
+\f1 /*
+\f5 \'d3\'b3\'c9\'e4\'cb\'f9\'d3\'d0\'d7\'ca\'d4\'b4
+\f1 \cf9 )
+\f5 \'a3\'ba
+\f1 \
+\'a0\'a0<servlet-mapping>\
+\'a0\'a0\'a0\'a0<servlet-name>springDispatcherServlet</servlet-name>\
+\'a0\'a0\'a0\'a0<url-pattern>*.do</url-pattern>\
+\'a0\'a0\'a0\'a0\cf12 <url-pattern>*.png</url-pattern>\cf9 \
+\'a0\'a0</servlet-mapping>\
+\
+2
+\f5 \'a1\'a2\'d4\'da
+\f1 spring
+\f5 \'b5\'c4\'c5\'e4\'d6\'c3\'ce\'c4\'bc\'fe\'d6\'d0\'bc\'d3\'c8\'eb\'b4\'fa\'c2\'eb\'a3\'ba\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf13 \cb1 \kerning1\expnd0\expndtw0 <
+\f2\b mvc:annotation-driven
+\f0\b0 />
+\f5\fs28 \cf9 \cb11 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1 \cf9 <mvc:resources\'a0location="/static/"\'a0mapping="/*/static/**"/>\
+
+\f5 \'d5\'e2\'d2\'bb\'b4\'fa\'c2\'eb\'bb\'e1\'b6\'d4\'be\'b2\'cc\'ac\'d7\'ca\'d4\'b4\'bd\'f8\'d0\'d0\'d3\'b3\'c9\'e4\'a1\'a3
+\f1 \
+
+\f5 \'d2\'b2\'be\'cd\'ca\'c7\'cb\'b5\'c8\'e7\'b9\'fb
+\f1 /static/
+\f5 \'c7\'b0\'d3\'d0\'b6\'ee\'cd\'e2\'b5\'c4\'d2\'bb\'bc\'b6\'c4\'bf\'c2\'bc\'a3\'a8\'c0\'e0\'bd\'f8\'d0\'d0
+\f1 RequestMapping
+\f5 \'c9\'fa\'b3\'c9\'b5\'c4\'c4\'bf\'c2\'bc\'a3\'a9\'a3\'ac\'bd\'ab\'c6\'e4\'d3\'b3\'c9\'e4\'ce\'aa\'c3\'bb\'d3\'d0\'d5\'e2\'d2\'bb\'bc\'b6\'c4\'bf\'c2\'bc\'b5\'c4\'bd\'e1\'b9\'b9
+\f1 \
+\
+
+\f5 \'c8\'e7\'a3\'ba
+\f1 \
+
+\f5 \'d5\'fd\'c8\'b7\'b5\'d8\'d6\'b7\'a3\'ba
+\f1 http://localhost:8080/webproject/static/images/password.png\
+
+\f5 \'c2\'a5\'d6\'f7\'c7\'e9\'bf\'f6\'cf\'c2\'d3\'d0\'ce\'ca\'cc\'e2\'b5\'c4\'b5\'d8\'d6\'b7\'a3\'ba
+\f1 http://localhost:8080/webproject\cf12 /classmap/static/\cf9 images/password.png\
+
+\f5 \'d3\'b3\'c9\'e4\'ba\'f3\'b5\'c4\'d5\'fd\'c8\'b7\'b5\'d8\'d6\'b7\'a3\'ba
+\f1 http://localhost:8080/webproject\cf12 /static/\cf9 images/password.png\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f6\fs24 \cf0 \cb14 controller
+\f5 \'d6\'d0
+\f6 \cf15 return\cf0 \'a0\cf16 "redirect:xxx.jsp"
+\f5 \cf0 \'a3\'bb
+\f6 \'a0\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf9 \cb11 \
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\partightenfactor0
+\ls1\ilvl0
+\f6\fs24 \cf17 \cb14 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+<\cf0 %\'a0\'a0\cf18 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0String\'a0\cf12 path\cf0 \'a0=\'a0\cf16 request\cf0 .getContextPath();\'a0\'a0\cf18 \
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\'a0\'a0String\'a0\cf12 basePath\cf0 \'a0=\'a0\cf16 request\cf0 .getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";\'a0\'a0\cf18 \
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0%\cf17 >\cf0 \'a0\'a0\cf18 \
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf17 <base\cf0 \'a0\cf12 href\cf0 =\cf16 "<%=basePath%>"\cf17 >\cf0 \'a0\cf19 <!--\'a0
+\f5 \'d2\'b3\'c3\'e6
+\f6 header
+\f5 \'d6\'d0\'d4\'f6\'bc\'d3
+\f6 \'a0-->\cf0 \'a0\'a0\cf18 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf9 \cb11 \
+\
+web.xml 
+\f5 \'bc\'d3\'c8\'eb
+\f1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \cb1 \kerning1\expnd0\expndtw0 <!-- 
+\f5 \'bc\'d3\'c8\'eb\'cf\'c2\'c3\'e6\'b2\'c5\'c4\'dc\'b7\'b5\'bb\'d8
+\f0 html
+\f5 \'d2\'b3\'c3\'e6
+\f0  -->\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf20 	<
+\f2\b servlet-mapping
+\f0\b0 >\
+		<
+\f2\b servlet-name
+\f0\b0 >jsp</
+\f2\b servlet-name
+\f0\b0 >\
+		<
+\f2\b url-pattern
+\f0\b0 >*.html</
+\f2\b url-pattern
+\f0\b0 >\
+	</
+\f2\b servlet-mapping
+\f0\b0 >}

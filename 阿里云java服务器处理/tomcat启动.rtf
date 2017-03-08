@@ -1,0 +1,122 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 ArialMT;\f4\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red242\green242\blue242;\red255\green255\blue255;
+\red178\green24\blue137;\red85\green116\blue124;\red219\green44\blue56;\red46\green174\blue187;\red47\green180\blue29;
+\red180\green36\blue25;\red107\green0\blue109;\red247\green247\blue247;\red252\green106\blue8;\red0\green0\blue255;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://www.omgdba.com/enable-ssl-on-tomcat.html"}}{\fldrslt 
+\f0\fs22 \cf0 \CocoaLigature0 http://www.omgdba.com/enable-ssl-on-tomcat.html}}
+\f0\fs22 \CocoaLigature0  https
+\f1 \'b2\'bf\'ca\'f0
+\f0 \
+sudo ./startup.sh\
+sudo ./shutdown.sh\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 \'b2\'e9\'bf\'b4
+\f0 tomcat 
+\f1 \'d2\'ec\'b3\'a3\'d0\'c5\'cf\'a2
+\f0 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec2 tail\'a0-f\'a0logs.log\
+con + c
+\f1\fs22 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \'cd\'cb\'b3\'f6
+\f0 \
+\pard\pardeftab720\sl580\partightenfactor0
+
+\f1\fs32 \cf2 \cb4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec2 \'bd\'f8\'c8\'eb
+\f3 tomcat/logs/
+\f1 \'ce\'c4\'bc\'fe\'bc\'d0\'cf\'c2
+\f3  
+\f1 \'bc\'fc\'c8\'eb\'d6\'b8\'c1\'ee\'a3\'ba
+\f3 tail -f catalina.out 
+\f1 \'be\'cd\'bf\'c9\'d2\'d4\'b2\'e9\'bf\'b4\'bf\'d8\'d6\'c6\'cc\'a8\'c1\'cb
+\f3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+\
+\
+\pard\tx692\pardeftab692\pardirnatural\partightenfactor0
+
+\fs28 \cf1  \cf5 <Valve \cf6 className\cf5 =\cf7 "org.apache.catalina.valves.AccessLogValve"\cf5  \cf6 directory\cf5 =\cf7 "logs"\cf5 \
+               \cf6 prefix\cf5 =\cf7 "localhost_access_log"\cf5  \cf6 suffix\cf5 =\cf7 ".txt"\cf5 \
+               \cf6 pattern\cf5 =\cf7 "%h %l %u %t &quot;%r&quot; %s %b"\cf5  />\cf1 \
+               \
+               \cf5 <Context \cf6 path\cf5 =\cf7 "/resource"\cf5  \cf6 docBase\cf5 =\cf7 "/Users/zn/Java/LuckResource"\cf5  \cf6 debug\cf5 =\cf7 "0"\cf5  \cf6 reloadable\cf5 =\cf7 "false"\cf5 />\cf1 \
+            \
+      \cf5 </Host>\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf8 <Connector \cf9 port\cf0 =\cf10 "8443"\cf8  \cf9 protocol\cf0 =\cf10 "org.apache.coyote.http11.Http11NioProtocol"\cf0 \
+\cf8            \cf9 maxThreads\cf0 =\cf10 "150"\cf8  \cf9 SSLEnabled\cf0 =\cf10 "true"\cf8  \cf9 scheme\cf0 =\cf10 "https"\cf8  \cf9 secure\cf0 =\cf10 "true"\cf0 \
+\cf8            \cf9 clientAuth\cf0 =\cf10 "false"\cf8   \cf9 sslProtocol\cf0 =\cf10 "TLS"\cf8  \cf0 \
+\cf8            \cf9 keystoreType\cf0 =\cf10 "PKCS12"\cf0 \
+\cf8            \cf9 keystoreFile\cf0 =\cf10 "/usr/local/tomcat8/conf/tomcat.pfx"\cf0 \
+\cf8            \cf9 keystorePass\cf0 =\cf10 "213982366850908"\cf8 />\
+\
+
+\fs28 \cf5 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4\fs24 \cf11 \expnd0\expndtw0\kerning0
+\CocoaLigature1 <login-config>\cf0 \
+\cb12 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf13 <!-- Authorization setting for SSL -->\cf0 \
+\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 <auth-method>\cf0 CLIENT-CERT\cf11 </auth-method>\cf0 \
+\cb12 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 <realm-name>\cf0 Client Cert Users-only Area\cf11 </realm-name>\cf0 \
+\cb1 \'a0\'a0\'a0\'a0\cf11 </login-config>\cf0 \
+\cb12 \'a0\'a0 \cf11 <security-constraint>\cf0 \
+\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 <web-resource-collection>\cf0 \
+\cb12 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 <web-resource-name >\cf0 SSL\cf11 </web-resource-name>\cf0 \
+\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 <url-pattern>\cf0 /*\cf11 </url-pattern>\cf0 \
+\cb12 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 </web-resource-collection>\cf0 \
+\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 <user-data-constraint>\cf0 \
+\cb12 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 <transport-guarantee>\cf0 CONFIDENTIAL\cf11 </transport-guarantee>\cf0 \
+\cb1 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf11 </user-data-constraint>\cf0 \
+\cb12 \'a0\'a0\'a0\'a0\cf11 </security-constraint>\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf5 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\pard\tx692\pardeftab692\pardirnatural\partightenfactor0
+\cf5 \
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4\fs24 \cf0 \expnd0\expndtw0\kerning0
+\CocoaLigature1 <Context\'a0docBase=\cf14 "D:\\pafalearning\\userapp\\dist\\tomcat\\userapp.war"\cf0 \'a0path=\cf14 "/userapp"\cf0 \'a0reloadable=\cf14 "true"\cf0 />
+\f0\fs28 \cf1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf0  \cf8 <Connector \cf9 port\cf0 =\cf10 "8443"\cf8  \cf9 protocol\cf0 =\cf10 "org.apache.coyote.http11.Http11AprProtocol"\cf0 \
+\cf8                \cf9 maxThreads\cf0 =\cf10 "150"\cf8  \cf9 SSLEnabled\cf0 =\cf10 "true"\cf8  >\cf0 \
+        \cf8 <UpgradeProtocol \cf9 className\cf0 =\cf10 "org.apache.coyote.http2.Http2Protocol"\cf8  />\cf0 \
+        \cf8 <SSLHostConfig>\cf0 \
+            \cf8 <Certificate \cf9 certificateKeyFile\cf0 =\cf10 "conf/localhost-rsa-key.pem"\cf0 \
+\cf8                          \cf9 certificateFile\cf0 =\cf10 "conf/localhost-rsa-cert.pem"\cf0 \
+\cf8                          \cf9 certificateChainFile\cf0 =\cf10 "conf/localhost-rsa-chain.pem"\cf0 \
+\cf8                          \cf9 type\cf0 =\cf10 "RSA"\cf8  />\cf0 \
+        \cf8 </SSLHostConfig>\cf0 \
+    \cf8 </Connector>\
+\
+\cf0  \cf8 <Connector \cf9 port\cf0 =\cf10 "8443"\cf8  \cf9 protocol\cf0 =\cf10 "org.apache.coyote.http11.Http11AprProtocol"\cf0 \
+\cf8                \cf9 maxThreads\cf0 =\cf10 "150"\cf8  \cf9 SSLEnabled\cf0 =\cf10 "true"\cf8  >\cf0 \
+        \cf8 <UpgradeProtocol \cf9 className\cf0 =\cf10 "org.apache.coyote.http2.Http2Protocol"\cf8  />\cf0 \
+       \cf8 <SSLHostConfig>\cf0 \
+                   \cf8 <Certificate\cf0 \
+\cf8                    \cf9 certificateKeystoreFile\cf0 =\cf10 "conf/ssl.jks"\cf0 \
+\cf8                    \cf9 certificateKeyAlias\cf0 =\cf10 "alias"\cf0 \
+\cf8                    \cf9 certificateKeystorePassword\cf0 =\cf10 "170521"\cf8                                             \cf9 type\cf0 =\cf10 "RSA"\cf8  />\cf0 \
+\
+       \cf8 </SSLHostConfig>\cf0 \
+    \cf8 </Connector>}
